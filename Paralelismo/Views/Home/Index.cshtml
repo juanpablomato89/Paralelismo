@@ -1,0 +1,35 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<div>
+    <h4>Course</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            Tiempo de Duracion:
+        </dt>
+        <dd class="col-sm-10">
+            @Html.ViewBag.Duracion                    
+        </dd>
+        <dt class="col-sm-2">
+            Resultado 1
+        </dt>
+        <dd class="col-sm-10">
+           @Html.ViewBag.ResultadosEnparalelo1
+            
+        </dd>
+        <dt class="col-sm-2">
+            Resultado 2
+        </dt>
+        <dd class="col-sm-10">
+            @Html.ViewBag.ResultadosEnparalelo2
+        </dd>
+
+    </dl>
+</div>
